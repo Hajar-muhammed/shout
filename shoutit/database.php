@@ -1,5 +1,7 @@
-<?php 
-$con =mysqli_connect("localhost", "root", "", "shoutit");
-if (mysqli_connect_errno()){
-	echo "faild to connect to mysql: ".mysqli_connect_errno();
+<?php
+//connnect to mysql
+$con = mysqli_connect("localhost", "root", "", "shoutit");
+//test connection
+if(mysqli_connect_errno()){
+	echo 'Failed to connect to MySQL: '.mysqli_connect_error();
 }
